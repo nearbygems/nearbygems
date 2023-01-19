@@ -1,4 +1,4 @@
-[Hi 👋🏻](https://linkedin.cin/in/nearbygems)
+[Hi 👋🏻](https://www.linkedin.com/in/nearbygems/)
 
 My name is Bergen.
 
