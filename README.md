@@ -2,6 +2,4 @@
 
 My name is Bergen.
 
-I am hard-working and results-driven Java adept.
-
-Looking for an opportunity to contribute my professional knowledge at the right place and enhance my skills for further growth and betterment. 
+I am a Java Developer with experience in building scalable and reliable systems. Proficient in Java, use Python, and currently expanding skills in Kotlin, Scala, and Go. Well-versed in Spring Boot and Apache Spark, with experience in fintech projects using PostgreSQL, Elasticsearch, MongoDB, and Kafka.
