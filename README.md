@@ -2,4 +2,6 @@
 
 My name is Bergen.
 
-I am a Java Developer with experience in building scalable and reliable systems. Proficient in Java, use Python, and currently expanding skills in Kotlin, Scala, and Go. Well-versed in Spring Boot and Apache Spark, with experience in fintech projects using PostgreSQL, Elasticsearch, MongoDB, and Kafka.
+Go and Rust backend developer with 5+ years of experience in building scalable and reliable systems.
+Previously a senior Java developer, now focused on modern backend development using Go and Rust, occasionally leveraging Python for automation and tooling.
+Strong expertise in PostgreSQL, MongoDB, Elasticsearch, and Kafka, with a background in fintech and distributed systems.
