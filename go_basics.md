@@ -254,6 +254,93 @@ func demo() {
 ```
 
 ------------------------------------------------------------
+## 🧩 Перечисления (Enum через iota)
+
+Go не имеет встроенных enum'ов (как в Rust или C#), \
+но аналог реализуется через `const` и счётчик `iota`.
+
+```go
+type Direction int
+
+const (
+    Up Direction = iota
+    Down
+    Left
+    Right
+)
+
+func main() {
+    fmt.Println(Up, Down, Left, Right) // 0 1 2 3
+}
+```
+
+------------------------------------------------------------
+## 🏷️ Приведение enum к строкам
+
+```go
+type Direction int
+
+const (
+    Up Direction = iota
+    Down
+    Left
+    Right
+)
+
+func (d Direction) String() string {
+    return [...]string{"Up", "Down", "Left", "Right"}[d]
+}
+
+func main() {
+    fmt.Println(Up)   // Up
+    fmt.Println(Down) // Down
+}
+```
+
+------------------------------------------------------------
+## 🧰 Enum из строк (удобно для JSON и API)
+
+```go
+type Status string
+
+const (
+    StatusOK    Status = "ok"
+    StatusError Status = "error"
+)
+
+func main() {
+    fmt.Println(StatusOK)
+}
+```
+
+------------------------------------------------------------
+## ⚙️ Автоматическая генерация String() методом stringer
+
+```sh
+go install golang.org/x/tools/cmd/stringer@latest
+```
+
+```go
+ //go:generate stringer -type=Direction
+ type Direction int
+
+ const (
+     Up Direction = iota
+     Down
+     Left
+     Right
+ )
+```
+
+```sh
+# Затем:
+go generate
+
+# Создаст direction_string.go с реализацией:
+# func (Direction) String() string { ... }
+```
+
+------------------------------------------------------------
 
 ## 🧾 Пример минимальной программы
 
