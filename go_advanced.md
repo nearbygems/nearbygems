@@ -1,4 +1,4 @@
-# 🚀 Go Advanced Cheatsheet — Продвинутые возможности
+# <img src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Blue.png" alt="Go logo" width="40"/> Advanced Cheatsheet — Продвинутые возможности
 
 ------------------------------------------------------------
 ## 🌐 Веб-сервер (net/http)
