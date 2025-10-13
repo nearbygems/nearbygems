@@ -1,4 +1,4 @@
-# 🐹 Go Cheatsheet — Синтаксис и конструкции
+# <img src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Blue.png" alt="Go logo" width="40"/> Cheatsheet — Синтаксис и конструкции
 
 ## 📦 Основы
 
