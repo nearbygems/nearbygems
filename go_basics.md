@@ -99,10 +99,24 @@ default:
 ## 🧮 Массивы и срезы
 
 ```go
+
+var arr [3]int              // [0 0 0]
+arr := [3]int{1, 2, 3}      // Инициализация
+arr := [...]int{1, 2, 3, 4} // Размер определяется автоматически
+fmt.Println(arr[0])         // 1
+
 var arr [3]int = [3]int{1, 2, 3}
 slice := []int{1, 2, 3}
 slice = append(slice, 4)
 fmt.Println(slice[1:3]) // от 1 до 2 включительно
+
+s := make([]int, 3)              // длина 3, кап. 3 → [0 0 0]
+s := make([]int, 3, 5)           // длина 3, кап. 5
+
+nums := []int{1, 2, 3, 4, 5}
+fmt.Println(nums[1:3])  // [2 3]
+fmt.Println(nums[:3])   // [1 2 3]
+fmt.Println(nums[2:])   // [3 4 5]
 ```
 
 append() — добавляет элементы \
@@ -121,6 +135,21 @@ delete(m, "b")
 for key, value := range m {
     fmt.Println(key, value)
 }
+
+var m map[string]int             // nil map, нельзя записывать
+m = make(map[string]int)         // инициализация
+m["age"] = 30
+m["score"] = 95
+
+val, ok := m["age"]              // проверка наличия ключа
+fmt.Println(val, ok)             // 30 true
+
+m := map[string]int{
+  "one": 1,
+  "two": 2,
+}
+
+delete(m, "two")
 ```
 
 ------------------------------------------------------------
