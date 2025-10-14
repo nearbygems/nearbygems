@@ -1,4 +1,4 @@
-# <img src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Blue.png" alt="Go logo" width="40"/> Gotchas & Best Practices
+# <img src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_Blue.png" alt="Go logo" width="40"/> Best Practices
 *(для Java-разработчика, переходящего на Go)*
 
 ---
@@ -58,7 +58,7 @@ s = append(s, 1, 2, 3)
 💡 Лучше `make([]int, 0, N)` вместо `make([]int, N)` если нужно аппендить.
 
 ```go
-// Всегда присваивай результат append
+// Лучше всегда присваивать результат append
 arr := []int{}
 arr = append(arr, 1)
 arr = append(arr, 2, 3, 4)
